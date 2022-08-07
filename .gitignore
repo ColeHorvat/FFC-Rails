@@ -36,3 +36,6 @@
 # Added by webpacked
 /node_modules
 /public/assets/webpacked
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
