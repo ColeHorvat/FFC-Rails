@@ -3,6 +3,6 @@
   <p class="col-md-8 fs-8"> <%= friend.email %> | <%= friend.phone %> | <%= friend.twitter %></p>
   <%= link_to "Edit", edit_friend_path(@friend), class: "btn btn-primary mt-3" %> |
   <%= link_to "Back", friends_path, class: "btn btn-dark mb-1 mt-3" %>
-  <%= button_to "Destroy", @friend, method: :delete, class: "btn btn-danger mt-3" %>
+  <%= button_to "Destroy", @friend, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger mt-3" %>
 </div>
     
